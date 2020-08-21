@@ -1,11 +1,9 @@
 require 'game'
 
 describe Game do
-#  subject(:homer) { Player.new("homer") }
-#  subject(:marge) { Player.new("marge") }
+
   let(:marge) { double :marge }
   it 'damages marge if homer attacks her' do
-#    allow(marge).to receive(:damage) { 'the expected return value' }
     expect(marge).to receive(:damage)
     subject.attack(marge)
   end
