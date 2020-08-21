@@ -9,10 +9,6 @@ class Game
     @current_turn = player_1
   end
 
-  def attack(player)
-     player.damage
-  end
-
   def switch_turn
     @current_turn = opponent_of(@current_turn)
   end
