@@ -9,7 +9,12 @@ class Attack
    end
 
    def kick
-     @player.damage
+     @player.damage(random_damage)
+   end
+
+  private
+   def random_damage
+     Kernel.rand(1..20)
    end
 
  end

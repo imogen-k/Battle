@@ -11,7 +11,5 @@ describe Player do
     expect(homer.hit_points).to eq(described_class::DEFAULT_HP)
   end
 
-  it 'reduces HP by 10' do
-    expect { homer.damage }.to change { homer.hit_points }.by(-10)
-  end
+  
 end
